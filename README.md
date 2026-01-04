@@ -59,9 +59,19 @@ M[n] = max(W[n] + M[n-2], M[n-1])
 
 ---
 
-## Estructura del Codigo
+## Estructura del Proyecto
 
-El programa esta organizado en modulos separados para facilitar el mantenimiento y la comprension:
+```
+Trabajo Remedial - Independent Set/
+│
+├── algoritmos.py          # Algoritmo de programacion dinamica (peso_maximo_independiente, reconstruir_solucion)
+├── entrada_datos.py       # Gestion de entrada de datos y menu principal
+├── independent_set.py     # Archivo principal para ejecutar el programa
+├── visualizacion.py       # Visualizacion grafica del camino y la solucion
+└── README.md             # Documentacion del proyecto
+```
+
+### Descripcion de Modulos
 
 - **`algoritmos.py`**: Contiene las funciones principales del algoritmo de programacion dinamica
 - **`visualizacion.py`**: Maneja la representacion grafica del camino y la solucion
@@ -162,34 +172,31 @@ pesos = [1, 4, 5, 4]
 nodos_seleccionados = [2, 4]
 visualizar_camino(pesos, nodos_seleccionados)
 # Muestra el grafo con los nodos 2 y 4 en verde
-```Modulo: entrada_datos.py
+```### Modulo: entrada_datos.py
 
 Este modulo gestiona la interaccion con el usuario.
 
-#### 5. `ingresar_pesos_manual()` y `ingresar_pesos_rapido()`
+#### 5. `ingresar_pesos_rapido()`
 
-**Archivo**: entrada_datos.pyl()` y `ingresar_pesos_rapido()`
+**Archivo**: entrada_datos.py
 
-**Ubicacion**: Lineas 122-155
-
-**Que hacen**: Permiten al usuario ingresar los pesos de los nodos de diferentes formas:
-- **Manual**: Solicita el numero de nodos y luego pide el peso de cada nodo uno por uno
-- **Rapido**: Permite ingresar todos los pesos en una sola linea separados por espacios
+**Que hace**: Permite al usuario ingresar los pesos de los nodos en una sola linea separados por espacios.
 
 **Ejemplo de uso**:
 ```
-# Manual
-Ingrese el numero de nodos: 4
-Peso del nodo 1: 1
-Peso del nodo 2: 4
-Peso del nodo 3: 5
-Peso del nodo 4: 4
+Ingrese los pesos de los nodos separados por espacios: 1 4 5 4
+```
 
-# R# 6. `mostrar_menu()`
+#### 6. `mostrar_menu()`
 
 **Archivo**: entrada_datos.py
 
 **Que hace**: Muestra el menu principal con las opciones disponibles y retorna la seleccion del usuario.
+
+**Opciones del menu**:
+1. Ingresar pesos de nodos (todos en una linea)
+2. Usar ejemplo predefinido: `[1, 4, 5, 4]`
+3. Salir
 
 ### Modulo: independent_set.py
 
@@ -199,15 +206,11 @@ Este es el archivo principal que importa y coordina todos los modulos.
 
 **Archivo**: independent_set.py
 
-#### 6. `ejecutar_programa()`
-
-**Ubicacion**: Lineas 180-213
-
 **Que hace**: Implementa el menu principal y el flujo interactivo del programa.
 
 **Flujo de ejecucion**:
 1. Muestra el menu con las opciones disponibles
-2. Usuario selecciona como ingresar los datos
+2. Usuario selecciona como ingresar los datos (opcion 1) o usa el ejemplo predefinido (opcion 2)
 3. Se obtienen los pesos de los nodos
 4. Se visualiza el grafo de entrada
 5. Se calcula la solucion optima
@@ -226,9 +229,9 @@ Al ejecutar `python independent_set.py`, el programa llama a la funcion `ejecuta
 ### 2. Entrada de Datos
 
 El usuario elige una de tres opciones:
-- Ingresar pesos manualmente (uno por uno)
-- Ingresar pesos rapido (todos en una linea)
-- Usar un ejemplo predefinido: `[1, 4, 5, 4]`
+- **Opcion 1**: Ingresar pesos en una sola linea (separados por espacios)
+- **Opcion 2**: Usar un ejemplo predefinido: `[1, 4, 5, 4]`
+- **Opcion 3**: Salir del programa
 
 ### 3. Visualizacion de Entrada
 
@@ -297,12 +300,11 @@ python independent_set.py
 ============================================================
   CONJUNTO INDEPENDIENTE MAXIMO EN UN CAMINO
 ============================================================
-1. Ingresar pesos de nodos (uno por uno)
-2. Ingresar pesos de nodos (todos en una linea)
-3. Usar ejemplo predefinido
-4. Salir
+1. Ingresar pesos de nodos (todos en una linea)
+2. Usar ejemplo predefinido
+3. Salir
 ============================================================
-Seleccione una opcion: 2
+Seleccione una opcion: 1
 
 Ingrese los pesos de los nodos separados por espacios: 1 4 5 4
 
