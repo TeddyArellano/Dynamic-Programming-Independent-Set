@@ -253,6 +253,6 @@ La siguiente tabla presenta diversos casos de prueba que demuestran el comportam
 
 **Institución:** Instituto Politécnico Nacional  
 **Curso:** Diseño y Análisis de Algoritmos  
-**Alumno:** Arellano Juárez José Juan
+**Alumno:** Arellano Juárez José Juan  
 **Tipo:** Trabajo Remedial  
 **Año:** 2026
