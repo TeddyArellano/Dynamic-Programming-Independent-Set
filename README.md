@@ -253,19 +253,6 @@ La siguiente tabla presenta diversos casos de prueba que demuestran el comportam
 
 **Institución:** Instituto Politécnico Nacional  
 **Curso:** Diseño y Análisis de Algoritmos  
+**Alumno:** Arellano Juárez José Juan
 **Tipo:** Trabajo Remedial  
 **Año:** 2026
-
-### Objetivos Académicos
-
-Este proyecto tiene como objetivos:
-
-1. Implementar y comprender el paradigma de programación dinámica
-2. Analizar la complejidad algorítmica de soluciones eficientes
-3. Aplicar técnicas de memoización para optimización de problemas
-4. Desarrollar software modular y bien documentado
-5. Visualizar soluciones algorítmicas de manera efectiva
-
----
-
-**Última actualización:** Enero 2026
